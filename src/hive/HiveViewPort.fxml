@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hive.view.BoardView?>
+<?import hive.view.GameEndLabel?>
+<?import hive.view.HistoryListView?>
+<?import hive.view.PlayerTilePane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HistoryListView fx:id="moveHistoryView" prefHeight="391.0" prefWidth="141.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HistoryListView>
+   </left>
+   <bottom>
+      <PlayerTilePane fx:id="blackPieceView" alignment="CENTER" hgap="5.0" prefHeight="100.0" stylesheets="@css/piece.css" vgap="5.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+        </PlayerTilePane>
+   </bottom>
+   <center>
+      <StackPane>
+         <children>
+            <VBox fx:id="buttonBoardBox" prefHeight="381.0" prefWidth="649.0">
+               <children>
+                  <ScrollPane fx:id="sp" fitToHeight="true" fitToWidth="true" minViewportHeight="300.0" minViewportWidth="500.0" pannable="true" prefHeight="423.0" prefWidth="649.0">
+                     <content>
+                        <BorderPane fx:id="borderPaneBoard">
+                           <center>
+                              <BoardView fx:id="boardView" stylesheets="@css/piece.css" />
+                           </center>
+                        </BorderPane>
+                     </content>
+                  </ScrollPane>
+                  <HBox fx:id="buttonBar" spacing="5.0">
+
+            </HBox>
+               </children>
+            </VBox>
+            <GameEndLabel fx:id="gameEndLabel" alignment="CENTER" mouseTransparent="true" prefWidth="500.0" text="alzemfkj" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </GameEndLabel>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <PlayerTilePane fx:id="whitePieceView" alignment="CENTER" hgap="5.0" prefHeight="100.0" prefWidth="849.0" stylesheets="@css/piece.css" vgap="5.0" BorderPane.alignment="CENTER">
+       
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin></PlayerTilePane>
+   </top>
+</BorderPane>
