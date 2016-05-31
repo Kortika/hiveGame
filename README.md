@@ -11,5 +11,6 @@ http://www.gen42.com/downloads/rules/Hive_Rules.pdf
 #Un-/half-implemented features
 
 ##Beetle
-	*Haven't implemented the ability to climb onto other pieces yet.
-	*The available moves it can make will be the same as that of a Queen.
+
+*Haven't implemented the ability to climb onto other pieces yet.
+*The available moves it can make will be the same as that of a Queen.
