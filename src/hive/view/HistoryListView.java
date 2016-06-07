@@ -40,7 +40,7 @@ public class HistoryListView extends ListView<Move> implements InvalidationListe
     public void init(History history, HiveMoveParser hiveMoveParser) {
         setModel(history);
         this.parser = hiveMoveParser;
-        invalidated(null); // This is used to initialize the viewer once by initialisation.
+        invalidated(history); // This is used to initialize the viewer once by initialisation.
     }
 
     private void setModel(History model) {

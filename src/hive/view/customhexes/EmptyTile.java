@@ -2,7 +2,7 @@ package hive.view.customhexes;
 
 
 import hive.model.game.HiveGame;
-import hive.interaction.EmptyTileClick;
+import hive.view.interaction.EmptyTileClick;
 import hive.model.board.Tile;
 import javafx.scene.paint.Color;
 

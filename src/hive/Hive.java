@@ -100,8 +100,8 @@ public class Hive extends Application {
         primaryStage.setMinHeight(600);
         primaryStage.setMinWidth(800);
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("hive/css/hiveView.css");
-        scene.getStylesheets().add("hive/css/piece.css");
+        scene.getStylesheets().add("hive/view/css/hiveView.css");
+        scene.getStylesheets().add("hive/view/css/piece.css");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

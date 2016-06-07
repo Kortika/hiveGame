@@ -2,7 +2,7 @@ package hive.view.customhexes;
 
 import hive.model.game.HiveGame;
 import hive.model.game.piece.HivePiece;
-import hive.interaction.HiveHexagonClick;
+import hive.view.interaction.HiveHexagonClick;
 
 /**
  * Created by Kortika on 3/12/16.
