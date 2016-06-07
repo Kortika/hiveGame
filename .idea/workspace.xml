@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daeb1931-72b4-4fd5-81b0-9bdb06f4499e" name="Default" comment="nut">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Hive_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/CustomNode.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/CustomNode__2_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hive/css/hiveView.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hive/css/piece.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hive/interaction/EmptyTileClick.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hive/interaction/HiveHexagonClick.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="daeb1931-72b4-4fd5-81b0-9bdb06f4499e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hive/Hive.java" afterPath="$PROJECT_DIR$/src/hive/Hive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hive/HiveViewPort.fxml" afterPath="$PROJECT_DIR$/src/hive/HiveViewPort.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hive/view/HistoryListView.java" afterPath="$PROJECT_DIR$/src/hive/view/HistoryListView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hive/view/customhexes/EmptyTile.java" afterPath="$PROJECT_DIR$/src/hive/view/customhexes/EmptyTile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hive/view/customhexes/HiveHexagon.java" afterPath="$PROJECT_DIR$/src/hive/view/customhexes/HiveHexagon.java" />
     </list>
     <ignored path="Hive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -261,6 +240,14 @@
       <option name="presentableId" value="Default" />
       <updated>1465285087465</updated>
     </task>
+    <task id="LOCAL-00001" summary="nut">
+      <created>1465285466351</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1465285466351</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
