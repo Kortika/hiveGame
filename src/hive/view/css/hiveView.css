@@ -1,0 +1,9 @@
+.black-border{
+    -fx-border-width: 2;
+    -fx-border-color: black;
+}
+
+.curved-border{
+    -fx-border-radius: 20;
+}
+
