@@ -65,7 +65,7 @@ public class BoardView extends Group implements InvalidationListener {
                 Coordinate result;
                 Coordinate xTranslated = xTranslation.multiply(hiveCoordinate.getX());
                 Coordinate yTranslated = yTranslation.multiply(hiveCoordinate.getY());
-                result = xTranslated.add(yTranslated);
+                result = xTranslated.addNoDepth(yTranslated);
                 pieceGroup.setTranslateX(result.getX());
                 pieceGroup.setTranslateY(result.getY());
                 pieceGroup.setScaleX(1);

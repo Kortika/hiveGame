@@ -41,7 +41,7 @@ public class SingleSwarm implements Rule {
 
     /**
      * Will recursively calculate the whole swarm and, if possible, visit all the pieces
-     * in play and add them to the set. The moving piece won't be added to the set to check
+     * in play and addNoDepth them to the set. The moving piece won't be added to the set to check
      * if the swarm will be separated during a move.
      * The swarm size should match the amount of pieces in play - 1,
      * even if the starting coordinate to search the swarm is

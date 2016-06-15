@@ -9,10 +9,16 @@ public class Coordinate {
 
     private int x;
     private int y;
+    private int z;
 
-    public Coordinate(int x, int y) {
+    public Coordinate(int x, int y, int z) {
         this.x = x;
         this.y = y;
+        this.z = z;
+    }
+
+    public Coordinate(int x, int y) {
+        this(x, y, 0);
     }
 
 
@@ -37,13 +43,23 @@ public class Coordinate {
         return y;
     }
 
-    public Coordinate add(Coordinate coordinate) {
+    public int getZ() {
+        return z;
+    }
+
+    public int getDepth() {
+        return z;
+    }
+
+    public Coordinate addNoDepth(Coordinate coordinate) {
         return new Coordinate(coordinate.getX() + getX(), coordinate.getY() + getY());
     }
 
     @Override
     public String toString() {
-        return "Row: " + getRow() + " Column: " + getColumn();
+        return "Row: " + getRow() + "\n" +
+                "Column: " + getColumn() + "\n" +
+                "Depth: " + getDepth();
     }
 
     @Override
@@ -52,7 +68,8 @@ public class Coordinate {
         if (o == null || getClass() != o.getClass()) return false;
         Coordinate that = (Coordinate) o;
         return Objects.equals(x, that.x) &&
-                Objects.equals(y, that.y);
+                Objects.equals(y, that.y) &&
+                Objects.equals(z, that.z);
     }
 
     @Override

@@ -55,17 +55,18 @@ public class SaveButton extends Button implements EventHandler<ActionEvent> {
         FileChooser.ExtensionFilter fileExtensions = new FileChooser.ExtensionFilter("TXT File", ".txt");
         fileChooser.getExtensionFilters().add(fileExtensions);
         File saveLocation = fileChooser.showSaveDialog(stage);
+        if (saveLocation != null) {
+            try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                    Files.newOutputStream(saveLocation.toPath()), Charset.forName("UTF-8")
+            ))) {
+                for (String move : moveHistoryView.getMoves()) {
+                    writer.write(move);
+                    writer.newLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
 
-        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-                Files.newOutputStream(saveLocation.toPath()), Charset.forName("UTF-8")
-        ))) {
-            for (String move : moveHistoryView.getMoves()) {
-                writer.write(move);
-                writer.newLine();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-
         }
 
     }
